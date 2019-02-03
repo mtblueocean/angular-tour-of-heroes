@@ -1,0 +1,7 @@
+.box {
+  background-color: green;
+  color: #FFF;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+}

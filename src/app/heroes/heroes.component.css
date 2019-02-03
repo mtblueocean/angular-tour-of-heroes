@@ -1,0 +1,23 @@
+.item-box {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  width: 200px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.item-box .number {
+  display: block;
+  background: #21719c;
+  padding: 10px;
+  color: #FFF;
+  width: 50px;
+  text-align: center;
+}
+
+.item-box .name {
+  padding: 10px;
+  background-color: #CCC;
+  width: 100%;
+}

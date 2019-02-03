@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.nav ul li {
+  background-color: #CCC;
+  color: gray;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 3px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav ul li.active {
+  color: #7979e2;
+}
+
+.dashboard {
+  display: flex;
+}
+
+.content > div {
+  display: none;
+}
+
+.content .dashboard.active {
+  display: flex;
+}
+
+.content .heroes.active {
+  display: block;
+}
+
+table {
+  font-size: 20px;
+}
+
+table input {
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.details-box {
+  border: 1px solid #CCC;
+  padding: 20px;
+  margin: 10px;
+}
+
+.back-btn {
+  background: #CCC;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  color: #666;
+  cursor: pointer;
+}

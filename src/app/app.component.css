@@ -1,68 +1,29 @@
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* AppComponent's private CSS styles */
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
 }
-
-.nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  justify-content: center;
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
 }
-
-.nav ul li {
-  background-color: #CCC;
-  color: gray;
-  padding: 10px 20px;
-  margin: 0 5px;
-  border-radius: 3px;
-  width: 100px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.nav ul li.active {
-  color: #7979e2;
-}
-
-.dashboard {
-  display: flex;
-}
-
-.content > div {
-  display: none;
-}
-
-.content .dashboard.active {
-  display: flex;
-}
-
-.content .heroes.active {
-  display: block;
-}
-
-table {
-  font-size: 20px;
-}
-
-table input {
-  font-size: 16px;
+nav a {
   padding: 5px 10px;
-}
-
-.details-box {
-  border: 1px solid #CCC;
-  padding: 20px;
-  margin: 10px;
-}
-
-.back-btn {
-  background: #CCC;
-  padding: 10px 20px;
-  margin-top: 20px;
+  text-decoration: none;
+  margin-top: 10px;
   display: inline-block;
-  border-radius: 5px;
-  color: #666;
-  cursor: pointer;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
 }

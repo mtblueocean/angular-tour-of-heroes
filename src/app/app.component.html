@@ -1,39 +1,6 @@
-<div class="container">
-  <div class="wrap">
-    <div class="nav navbar">
-      <ul>
-        <li class="active dashboard" (click)="toggleNavigation('dashboard')">Dashboard</li>
-        <li class="heroes" (click)="toggleNavigation('heroes')">Heroes</li>
-      </ul>
-    </div>
-
-    <div class="content">
-      <div id="dashboard" class="dashboard active">
-        <div class="dash-item" *ngFor="let item of dashboardItems;">
-          <app-dashboard [item]="item" (click)="showDetails(item)"></app-dashboard>
-        </div>
-      </div>
-
-      <div id="heroes" class="heroes">
-        <div class="hero-item" *ngFor="let item of heroItems;">
-          <app-heroes [item]="item" (click)="showDetails(item)"></app-heroes>
-        </div>
-      </div>
-    </div>
-
-    <div class="details-box" *ngIf="(detailsInfo | json) != '{}'">
-      <h1>{{ detailsInfo.name }} Details!</h1>
-      <table>
-        <tr>
-          <td>id:</td>
-          <td>{{ detailsInfo.id }}</td>
-        </tr>
-        <tr>
-          <td>name:</td>
-          <td><input type="text" name="name" value="{{ detailsInfo.name }}"></td>
-        </tr>
-      </table>
-      <a class="back-btn" (click)="back()">Back</a>
-    </div>
-  </div>
-</div>
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
